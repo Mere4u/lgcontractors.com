@@ -1,0 +1,19 @@
+{
+  "name": "base-wordpress",
+  "version": "1.0.0",
+  "description": "Legacy Base Wordpress Installation",
+  "scripts": {
+    "start": "docker-compose up -d --force-recreate --build",
+    "remove": "docker-compose rm -s -v -f db && docker-compose rm -s -v -f wordpress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mere4u/base-wordpress.git"
+  },
+  "author": "Clyde Sales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mere4u/base-wordpress/issues"
+  },
+  "homepage": "https://github.com/Mere4u/base-wordpress#readme"
+}
